@@ -190,6 +190,25 @@ li > a {
   font-size: 0.95rem;
   color: var(--dark-gray);
 }
+
+.about-container {
+  background-color: var(--content-container-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  padding-inline: 3rem;
+  padding-block: 3rem;
+}
+.about-heading {
+  font-size: 1.25rem;
+}
+
+.about-container > p {
+  font-size: 0.995rem;
+  line-height: 1.84;
+  color: hsl(0, 0%, 53%);
+}
 progress {
   -webkit-appearance: none;
   appearance: none;
