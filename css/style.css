@@ -51,6 +51,24 @@ header {
   grid-row: 1;
   grid-column: 1 / -1;
   height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#desktop-nav {
+  display: none;
+}
+
+#desktop-nav > menu {
+  display: flex;
+  color: hsl(240, 33%, 99%);
+}
+li {
+  list-style: none;
+}
+li > a {
+  color: inherit;
+  text-decoration: none;
 }
 .content {
   display: flex;
@@ -69,7 +87,10 @@ header {
   align-items: center;
   position: relative;
 
-  padding-block: 3.1rem;
+  padding-block: 3.3rem;
+}
+.mastercraft-container > h1 {
+  font-size: 1.76rem;
 }
 .mastercraft-logo {
   position: absolute;
@@ -98,4 +119,16 @@ header {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (min-width: 35rem) {
+  #hamburger-btn {
+    display: none;
+  }
+  #desktop-nav {
+    display: flex;
+  }
+  #mobile-nav {
+    display: none;
+  }
 }

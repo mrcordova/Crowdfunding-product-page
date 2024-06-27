@@ -36,14 +36,16 @@
           <li><a href="#">Get Started</a></li>
         </menu>
       </nav>
-      <nav id="mobile-nav" style="display: none">
+      <nav id="mobile-nav" popover>
         <menu>
           <li><a href="#">About</a></li>
           <li><a href="#">Discover</a></li>
           <li><a href="#">Get Started</a></li>
         </menu>
       </nav>
-      <img src="./images/icon-hamburger.svg" alt="3 vertical slashes" />
+      <button id="hamburger-btn" popovertarget="mobile-nav">
+        <img src="./images/icon-hamburger.svg" alt="3 vertical slashes" />
+      </button>
     </header>
     <main>
       <picture id="hero-img">
@@ -60,7 +62,7 @@
             class="mastercraft-logo"
             src="./images/logo-mastercraft.svg"
             alt="Mastercraft" />
-          <h1>Mastercraft Bamboo Monitor Riser</h1>
+          <h1 class="commissioner-700">Mastercraft Bamboo Monitor Riser</h1>
           <p>
             A beautiful & handcrafted monitor stand to reduce neck and eye
             strain.
