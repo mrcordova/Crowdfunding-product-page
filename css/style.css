@@ -237,10 +237,13 @@ li > a {
 .choice-heading > h4 {
   font-size: 1.12rem;
 }
-.choice-heading > p {
+.choice-pledge {
   color: hsl(174, 38%, 60%);
   font-size: 0.93rem;
   line-height: 1.9;
+}
+.out-pledge {
+  color: hsl(174, 38%, 81%);
 }
 .select-btn-container {
   display: flex;
@@ -254,17 +257,26 @@ li > a {
   gap: 0.5rem;
   align-items: center;
 }
+.out-heading {
+  color: hsl(0, 0%, 49%);
+}
+.out-amount {
+  color: hsl(0, 0%, 49%);
+}
 .select-btn-container > h4 > span {
   font-size: 1rem;
   color: var(--dark-gray);
 }
-.select-btn-container > button {
+.reward-btn {
   background-color: var(--moderate-cyan);
   color: hsl(180, 100%, 98%);
   padding-inline: 2rem;
   padding-block: 0.8rem;
   font-size: 0.9rem;
   border-radius: 1.5rem;
+}
+.out-btn {
+  background-color: hsl(0, 0%, 80%);
 }
 progress {
   -webkit-appearance: none;
