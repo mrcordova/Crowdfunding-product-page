@@ -6,6 +6,8 @@
 
   --black: hsl(0, 0%, 0%);
   --dark-gray: hsl(0, 0%, 48%);
+
+  --content-container-bg: hsl(0, 0%, 100%);
 }
 
 .commissioner-400 {
@@ -54,6 +56,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-inline: 10.1rem;
+  padding-block-start: 3rem;
 }
 #desktop-nav {
   display: none;
@@ -61,6 +65,9 @@ header {
 
 #desktop-nav > menu {
   display: flex;
+  padding: 0;
+  font-size: 0.8rem;
+  gap: 2.2rem;
   color: hsl(240, 33%, 99%);
 }
 li {
@@ -76,19 +83,21 @@ li > a {
   position: absolute;
   top: 19.2rem;
   left: 24.6%;
-  background-color: hsl(0, 0%, 100%);
 
   inline-size: 45.5rem;
   border-radius: 10px;
+
+  gap: 2rem;
 }
 .mastercraft-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-
+  background-color: var(--content-container-bg);
   gap: 0.6rem;
   padding-block: 3.3rem;
+  border-radius: 0.5rem;
   /* padding-inline: 0.5rem; */
 }
 .mastercraft-container > h1 {
@@ -139,6 +148,10 @@ li > a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.tracking-container {
+  background-color: var(--content-container-bg);
 }
 
 @media (min-width: 35rem) {
