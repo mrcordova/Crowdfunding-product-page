@@ -155,6 +155,11 @@ li > a {
 
 .tracking-container {
   background-color: var(--content-container-bg);
+  display: flex;
+  flex-direction: column;
+}
+progress {
+  width: 100%;
 }
 
 @media (min-width: 35rem) {
