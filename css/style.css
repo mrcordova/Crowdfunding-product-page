@@ -28,12 +28,14 @@ header {
   height: max-content;
 }
 .content {
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 19.2rem;
+  left: 24.7%;
   background-color: hsl(0, 0%, 100%);
+
+  inline-size: 45.5rem;
 }
 .mastercraft-container {
   display: flex;
@@ -44,7 +46,7 @@ header {
 .mastercraft-logo {
   position: absolute;
   top: -1.75rem;
-  left: 50%;
+  left: calc(50% - 1.75rem);
 }
 .back-project-container {
   display: flex;
