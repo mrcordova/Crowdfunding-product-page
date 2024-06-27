@@ -70,6 +70,10 @@ header {
   gap: 2.2rem;
   color: hsl(240, 33%, 99%);
 }
+
+.desktop-link:hover {
+  color: hsl(20%, 16%, 96%);
+}
 li {
   list-style: none;
 }
@@ -136,6 +140,11 @@ li > a {
   border-radius: 2rem;
 }
 
+:is(.back-project-container > button, .reward-btn):hover {
+  cursor: pointer;
+  background-color: var(--dark-cyan);
+}
+
 .bookmark-container {
   display: flex;
   align-items: center;
@@ -144,6 +153,9 @@ li > a {
   gap: 1rem;
   padding-inline-end: 1.5rem;
   border-radius: 2rem;
+}
+.bookmark-container:hover {
+  cursor: pointer;
 }
 #hero-img {
   z-index: 0;
