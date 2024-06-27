@@ -209,6 +209,57 @@ li > a {
   line-height: 1.83;
   color: hsl(0, 0%, 53%);
 }
+.choices-container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 1.9rem;
+  padding-block: 2.15rem 2rem;
+  margin-block-start: 0.5rem;
+  border: 0.005rem solid hsl(0, 0%, 90%);
+  border-radius: 0.5rem;
+  gap: 1.4rem;
+}
+.choices-container > p {
+  line-height: 1.75;
+  color: hsl(0, 0%, 53%);
+}
+
+.choice-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.choice-heading > h4 {
+  font-size: 1.12rem;
+}
+.choice-heading > p {
+  color: hsl(174, 38%, 60%);
+  font-size: 0.93rem;
+  line-height: 1.9;
+}
+.select-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 0.3rem;
+}
+.select-btn-container > h4 {
+  font-size: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.select-btn-container > h4 > span {
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+.select-btn-container > button {
+  background-color: var(--moderate-cyan);
+  color: hsl(180, 100%, 98%);
+  padding-inline: 2rem;
+  padding-block: 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 1.5rem;
+}
 progress {
   -webkit-appearance: none;
   appearance: none;
