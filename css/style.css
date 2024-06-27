@@ -157,18 +157,50 @@ li > a {
   background-color: var(--content-container-bg);
   display: flex;
   flex-direction: column;
+
+  padding-inline: 3rem;
+  padding-block: 3rem;
+  border-radius: 0.5rem;
+}
+.tracking-amounts {
+  display: flex;
+  flex-direction: column;
+  padding-block-end: 2.2rem;
+  /* justify-content: space-evenly; */
+}
+.tracking-amounts > div {
+  border-right: 0.005rem solid hsl(0, 0%, 90%);
+}
+.tracking-amounts > div:first-child {
+  padding-inline-end: 2.5rem;
+}
+.tracking-amounts > div:nth-child(2) {
+  padding-inline-start: 2.9rem;
+  padding-inline-end: 5.6rem;
+}
+
+.tracking-amounts > div:last-child {
+  border: 0;
+  padding-inline-start: 3rem;
+}
+.tracking-amounts > div > h2 {
+  font-size: 2rem;
+}
+.tracking-amounts > div > p {
+  font-size: 0.95rem;
+  color: var(--dark-gray);
 }
 progress {
   -webkit-appearance: none;
   appearance: none;
   color: var(--moderate-cyan);
-  height: 9px;
+  height: 0.8rem;
   width: 100%;
   border-radius: 10px;
 
   /* Firefox: Unfilled portion of the progress bar */
   background: hsl(0, 0%, 96%);
-  border: 1px solid currentColor;
+  /* border: 1px solid currentColor; */
 }
 
 /* Firefox: Filled portion of the progress bar */
@@ -198,5 +230,8 @@ progress::-webkit-progress-value {
   }
   #mobile-nav {
     display: none;
+  }
+  .tracking-amounts {
+    flex-direction: row;
   }
 }
