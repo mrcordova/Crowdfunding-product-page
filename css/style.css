@@ -82,11 +82,12 @@ li > a {
   flex-direction: column;
   position: absolute;
   top: 19.2rem;
-  left: 24.6%;
+  /* left: 24.6%; */
+  left: 0;
 
-  inline-size: 45.5rem;
+  /* inline-size: 45.5rem; */
   border-radius: 10px;
-
+  margin-inline: 22rem;
   gap: 1.4rem;
 }
 .mastercraft-container {
@@ -277,6 +278,11 @@ li > a {
 }
 .out-btn {
   background-color: hsl(0, 0%, 80%);
+  color: hsl(180, 100%, 98%);
+  padding-block: 0.8rem;
+  font-size: 0.9rem;
+  border-radius: 1.5rem;
+  padding-inline: 2.3rem;
 }
 progress {
   -webkit-appearance: none;
