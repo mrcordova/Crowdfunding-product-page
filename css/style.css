@@ -126,7 +126,11 @@ li > a {
 .bookmark-container {
   display: flex;
   align-items: center;
-  /* flex: 1; */
+  background-color: hsl(0, 0%, 96%);
+  color: var(--dark-gray);
+  gap: 1rem;
+  padding-inline-end: 1.5rem;
+  border-radius: 2rem;
 }
 #hero-img {
   z-index: 0;
