@@ -87,7 +87,7 @@ li > a {
   inline-size: 45.5rem;
   border-radius: 10px;
 
-  gap: 2rem;
+  gap: 1.4rem;
 }
 .mastercraft-container {
   display: flex;
@@ -96,7 +96,7 @@ li > a {
   position: relative;
   background-color: var(--content-container-bg);
   gap: 0.6rem;
-  padding-block: 3.3rem;
+  padding-block: 3.3rem 3rem;
   border-radius: 0.5rem;
   /* padding-inline: 0.5rem; */
 }
