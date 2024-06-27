@@ -209,6 +209,12 @@ li > a {
   line-height: 1.83;
   color: hsl(0, 0%, 53%);
 }
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  /* padding-block-start: 0.1rem; */
+}
 .choices-container {
   display: flex;
   flex-direction: column;
@@ -216,7 +222,7 @@ li > a {
   padding-block: 2.15rem 2rem;
   margin-block-start: 0.5rem;
   border: 0.005rem solid hsl(0, 0%, 90%);
-  border-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
   gap: 1.4rem;
 }
 .choices-container > p {
