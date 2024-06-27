@@ -159,7 +159,34 @@ li > a {
   flex-direction: column;
 }
 progress {
+  -webkit-appearance: none;
+  appearance: none;
+  color: var(--moderate-cyan);
+  height: 9px;
   width: 100%;
+  border-radius: 10px;
+
+  /* Firefox: Unfilled portion of the progress bar */
+  background: hsl(0, 0%, 96%);
+  border: 1px solid currentColor;
+}
+
+/* Firefox: Filled portion of the progress bar */
+progress::-moz-progress-bar {
+  background: currentColor;
+  border-radius: 10px;
+}
+
+/* Chrome & Safari: Unfilled portion of the progress bar */
+progress::-webkit-progress-bar {
+  background: hsl(0, 0%, 96%);
+  border-radius: 10px;
+}
+
+/* Chrome & Safari: Filled portion of the progress bar */
+progress::-webkit-progress-value {
+  background: currentColor;
+  border-radius: 10px;
 }
 
 @media (min-width: 35rem) {
