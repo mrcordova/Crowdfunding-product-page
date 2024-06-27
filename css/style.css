@@ -120,7 +120,10 @@ li > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-block-start: 1.7rem;
   width: 100%;
+  padding-inline: 2.95rem;
+  /* gap: 16rem; */
 }
 .back-project-container > button {
   background-color: var(--moderate-cyan);
@@ -128,7 +131,7 @@ li > a {
   color: hsl(180, 100%, 98%);
   font-size: 1rem;
   padding-block: 1rem;
-  padding-inline: 2.5rem;
+  padding-inline: 2.55rem;
   border-radius: 2rem;
 }
 
