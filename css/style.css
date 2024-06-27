@@ -205,8 +205,8 @@ li > a {
 }
 
 .about-container > p {
-  font-size: 0.995rem;
-  line-height: 1.84;
+  font-size: 0.998rem;
+  line-height: 1.83;
   color: hsl(0, 0%, 53%);
 }
 progress {
