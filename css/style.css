@@ -87,10 +87,20 @@ li > a {
   align-items: center;
   position: relative;
 
+  gap: 0.6rem;
   padding-block: 3.3rem;
+  /* padding-inline: 0.5rem; */
 }
 .mastercraft-container > h1 {
   font-size: 1.76rem;
+  color: var(--black);
+}
+
+.mastercraft-container > p {
+  /* text-align: left; */
+  color: hsl(0, 0%, 52%);
+  padding-inline-start: 0.1rem;
+  /* padding-block-start: 0.6rem; */
 }
 .mastercraft-logo {
   position: absolute;
