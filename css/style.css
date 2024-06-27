@@ -114,7 +114,13 @@ li > a {
   width: 100%;
 }
 .back-project-container > button {
-  /* flex: 1; */
+  background-color: var(--moderate-cyan);
+  /* color: hsl(171, 72%, 89%); */
+  color: hsl(180, 100%, 98%);
+  font-size: 1rem;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  border-radius: 2rem;
 }
 
 .bookmark-container {
