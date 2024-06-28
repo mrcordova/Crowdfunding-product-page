@@ -338,6 +338,10 @@ progress::-webkit-progress-value {
   border-radius: 10px;
 }
 
+#back-project-close-btn {
+  align-self: flex-end;
+}
+
 #back-project-dialog {
   border: 0;
   position: absolute;
@@ -353,6 +357,13 @@ progress::-webkit-progress-value {
 }
 #back-project-dialog::backdrop {
   background-color: hsl(from hsl(0, 0%, 0%) h s l / 0.5);
+}
+.dialog-pledge {
+  display: none;
+}
+
+input[type="radio"]:checked ~ .dialog-pledge {
+  display: flex;
 }
 
 @media (min-width: 35rem) {
