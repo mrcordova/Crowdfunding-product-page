@@ -6,6 +6,7 @@ backProjBtn.addEventListener("click", () => {
   backProjDialog.showModal();
 });
 
-backProjCloseBtn.addEventListener("click", () => {
+backProjCloseBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   backProjDialog.close();
 });
