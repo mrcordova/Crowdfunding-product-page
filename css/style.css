@@ -400,9 +400,16 @@ label {
 }
 .amount-left {
   margin-inline-start: auto;
+  font-size: 1.1rem;
+}
+.amount-left > span {
+  color: var(--dark-gray);
 }
 .label-pledge {
   color: var(--moderate-cyan);
+}
+.dialog-amount {
+  font-size: 0.9rem;
 }
 @media (min-width: 35rem) {
   #hamburger-btn {
