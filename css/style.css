@@ -368,6 +368,10 @@ progress::-webkit-progress-value {
 .dialog-main-para {
   color: var(--dark-gray);
 }
+.dialog-choice-para {
+  color: var(--dark-gray);
+  font-size: 1.08rem;
+}
 .dialog-pledge {
   display: none;
 }
