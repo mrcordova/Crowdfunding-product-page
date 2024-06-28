@@ -262,7 +262,8 @@ li > a {
   font-size: 1.12rem;
 }
 .choice-pledge {
-  color: hsl(174, 38%, 60%);
+  /* color: hsl(174, 38%, 60%); */
+  color: var(--moderate-cyan);
   font-size: 0.93rem;
   line-height: 1.9;
 }
@@ -389,7 +390,16 @@ input[type="radio"]:checked + div > .dialog-pledge {
 input[type="radio"] + div {
   flex: 1;
 }
-
+label {
+  display: flex;
+  gap: 0.5rem;
+}
+.amount-left {
+  margin-inline-start: auto;
+}
+.label-pledge {
+  color: var(--moderate-cyan);
+}
 @media (min-width: 35rem) {
   #hamburger-btn {
     display: none;
