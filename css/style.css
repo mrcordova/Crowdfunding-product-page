@@ -365,7 +365,7 @@ progress::-webkit-progress-value {
   display: flex;
   align-items: baseline;
 }
-input[type="radio"]:checked ~ .dialog-pledge {
+input[type="radio"]:checked + div > .dialog-pledge {
   display: flex;
 }
 
