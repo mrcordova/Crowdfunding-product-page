@@ -5,6 +5,9 @@ const backProjDialog = document.getElementById("back-project-dialog");
 const continueBtns = document.querySelectorAll(".dialog-pledge>button");
 const thanksDialog = document.getElementById("thanks-dialog");
 const gotItBtn = thanksDialog.querySelector("button");
+
+const bookmarkDiv = document.querySelector(".bookmark-container");
+
 const showModel = function () {
   backProjDialog.close();
   thanksDialog.showModal();
@@ -24,4 +27,8 @@ for (const continueBtn of continueBtns) {
 
 gotItBtn.addEventListener("click", () => {
   thanksDialog.close();
+});
+
+bookmarkDiv.addEventListener("click", (e) => {
+  bookmarkDiv.classList.toggle("bookmark-active");
 });

@@ -164,11 +164,11 @@ li > a {
   cursor: pointer;
 }
 
-.bookmark-active > circle {
+.bookmark-active > svg > g > circle {
   fill: var(--dark-cyan);
 }
 
-.bookmark-active > path {
+.bookmark-active > svg > g > path {
   fill: hsl(0, 33%, 99%);
 }
 .bookmark-active {
