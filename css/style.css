@@ -107,6 +107,9 @@ li > a {
   grid-column: 1 / -1;
 
   max-inline-size: 40rem;
+  min-inline-size: 20.5rem;
+  inline-size: 20.5rem;
+
   border-radius: 10px;
   /* margin-inline: 18rem; */
   margin-inline: auto;
@@ -124,16 +127,20 @@ li > a {
   border-radius: 0.5rem;
 }
 .mastercraft-container > h1 {
-  font-size: 1.76rem;
   color: var(--black);
   /* Mobile */
   text-align: center;
+  font-size: 1.25rem;
+  width: 20ch;
+  /* dEsktop */
+  /* font-size: 1.76rem; */
 }
 
 .mastercraft-container > p {
   color: hsl(0, 0%, 52%);
   padding-inline-start: 0.1rem;
   /* Mobile */
+  font-size: 0.9rem;
   text-align: center;
 }
 .mastercraft-logo {
