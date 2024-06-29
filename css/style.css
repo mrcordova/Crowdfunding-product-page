@@ -396,7 +396,9 @@ input[type="radio"] {
   height: 2rem;
   width: 1.5rem;
 }
-
+input[type="radio"]:checked {
+  accent-color: hsl(148.63deg 38.08% 44.06%);
+}
 .dialog-input-container:has(input[type="radio"]:checked) + .dialog-pledge {
   display: flex;
   border-top: 0.15rem solid hsl(0, 0%, 90%);
@@ -406,15 +408,11 @@ input[type="radio"] {
   width: 100%;
   gap: 1rem;
 }
-/* input[type="radio"]:checked ~ .dialog-pledge {
-} */
+
 .dialog-lab-container {
   flex: 1;
 }
-/* input[type="radio"] + div {
-  display: flex;
-  flex: 1;
-} */
+
 label {
   display: flex;
   gap: 0.5rem;
