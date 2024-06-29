@@ -146,7 +146,7 @@ li > a {
   border-radius: 2rem;
 }
 
-:is(.back-project-container > button, .reward-btn):hover {
+:is(.back-project-container > button, .reward-btn, .continue-btn):hover {
   cursor: pointer;
   background-color: var(--dark-cyan);
 }
@@ -400,6 +400,10 @@ progress::-webkit-progress-value {
   border: 0.005rem solid hsl(0, 0%, 90%);
   border-radius: 0.5rem;
 }
+
+.dialog-radio-container:has(input[type="radio"]:checked) {
+  border: 0.2rem solid var(--moderate-cyan);
+}
 .dialog-input-container {
   display: flex;
   gap: 1rem;
@@ -465,6 +469,11 @@ input[type="number"] {
 
 .input-symbol {
   position: relative;
+}
+
+input[type="number"]:hover {
+  cursor: pointer;
+  border: 0.1rem solid var(--dark-cyan);
 }
 
 .input-symbol:before {
