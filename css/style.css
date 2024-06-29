@@ -122,18 +122,19 @@ li > a {
   gap: 0.6rem;
   padding-block: 3.3rem 3rem;
   border-radius: 0.5rem;
-  /* padding-inline: 0.5rem; */
 }
 .mastercraft-container > h1 {
   font-size: 1.76rem;
   color: var(--black);
+  /* Mobile */
+  text-align: center;
 }
 
 .mastercraft-container > p {
-  /* text-align: left; */
   color: hsl(0, 0%, 52%);
   padding-inline-start: 0.1rem;
-  /* padding-block-start: 0.6rem; */
+  /* Mobile */
+  text-align: center;
 }
 .mastercraft-logo {
   position: absolute;
@@ -142,12 +143,17 @@ li > a {
 }
 .back-project-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-block-start: 1.7rem;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
-  padding-inline: 2.95rem;
-  /* gap: 16rem; */
+  /* Mobile */
+  gap: 0.5rem;
+  margin-block-start: 1.7rem;
+  padding-inline: 1rem;
+  /* Desktop */
+  /* gap: 0rem; */
+  /* margin-block-start: 1.7rem; */
+  /* padding-inline: 2.95rem; */
 }
 .back-project-container > button {
   background-color: var(--moderate-cyan);
@@ -170,16 +176,25 @@ li > a {
 }
 
 .bookmark-container {
-  display: flex;
   align-items: center;
   background-color: hsl(0, 0%, 96%);
   color: var(--dark-gray);
   gap: 1rem;
   padding-inline-end: 1.5rem;
   border-radius: 2rem;
+  visibility: hidden;
+  /* width: 0;  */
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 .bookmark-container:hover {
   cursor: pointer;
+}
+
+.bookmark-container > svg {
+  visibility: visible;
+  /* vertical-align: baseline; */
 }
 
 .bookmark-active > svg > g > circle {
@@ -549,5 +564,15 @@ input[type="number"]:hover {
   }
   .tracking-amounts {
     flex-direction: row;
+  }
+
+  .back-project-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bookmark-container {
+    display: flex;
+    visibility: visible;
   }
 }
