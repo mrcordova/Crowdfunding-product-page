@@ -8,9 +8,19 @@ const gotItBtn = thanksDialog.querySelector("button");
 
 const bookmarkDiv = document.querySelector(".bookmark-container");
 
+const rewardBtns = document.querySelectorAll(".reward-btn");
+
 const showModel = function () {
   backProjDialog.close();
   thanksDialog.showModal();
+};
+
+const rewardBtnClick = function (e) {
+  const rewardAmount = e.currentTarget.value;
+  const selectedRadio = backProjDialog.querySelector(`[id='${rewardAmount}']`);
+
+  selectedRadio.checked = true;
+  backProjDialog.showModal();
 };
 backProjBtn.addEventListener("click", () => {
   backProjDialog.showModal();
@@ -32,3 +42,7 @@ gotItBtn.addEventListener("click", () => {
 bookmarkDiv.addEventListener("click", (e) => {
   bookmarkDiv.classList.toggle("bookmark-active");
 });
+
+for (const rewardBtn of rewardBtns) {
+  rewardBtn.addEventListener("click", rewardBtnClick);
+}
