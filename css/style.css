@@ -419,7 +419,7 @@ label {
   gap: 0.5rem;
 }
 
-label:has(+ input[name="pledge-amount"]) {
+label:has(+ input[name="pledge-amount"], + .input-symbol) {
   color: var(--dark-gray);
   margin-inline-end: auto;
 }
@@ -450,6 +450,17 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.input-symbol {
+  position: relative;
+}
+
+.input-symbol:before {
+  position: absolute;
+  top: 0.6rem;
+  content: "$";
+  left: 1rem;
+  color: var(--dark-gray);
+}
 .amount-left {
   margin-inline-start: auto;
   font-size: 1.1rem;
