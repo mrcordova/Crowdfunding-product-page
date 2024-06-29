@@ -42,6 +42,7 @@ body {
   height: 100svh;
   /* height: 100%; */
   display: grid;
+  /* align-content: center; */
   grid-template-rows: auto minmax(0, 1fr);
   background-color: hsl(0, 0%, 98%);
 }
@@ -50,8 +51,10 @@ main {
   height: 100%;
   grid-row: 1;
   grid-column: 1 / -1;
-
-  position: relative;
+  display: grid;
+  /* align-content: center; */
+  /* position: relative; */
+  /* height: 100vh; */
 }
 
 header {
@@ -90,14 +93,18 @@ li > a {
 .content {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 19.2rem;
+  /* position: absolute; */
+  /* top: 19.2rem; */
   /* left: 24.6%; */
-  left: 0;
-
+  /* left: 0; */
+  z-index: 1;
+  grid-row: 1;
+  grid-column: 1 / -1;
   /* inline-size: 45.5rem; */
+  /* block-size: 90rem; */
   border-radius: 10px;
-  margin-inline: 22rem;
+  margin-inline: 18rem;
+  margin-block: 15rem 5rem;
   gap: 1.4rem;
 }
 .mastercraft-container {
@@ -181,6 +188,9 @@ li > a {
 }
 #hero-img {
   z-index: 0;
+  grid-row: 1;
+  grid-column: 1 / -1;
+  height: max-content;
 }
 #hero-img > img {
   width: 100%;
