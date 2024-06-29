@@ -445,7 +445,10 @@ label:has(+ input[name="pledge-amount"], + .input-symbol) {
   color: var(--dark-gray);
   margin-inline-end: auto;
 }
-
+:not(input:disabled) + .dialog-lab-container > label > span:first-child:hover {
+  color: var(--moderate-cyan);
+  cursor: pointer;
+}
 input[name="pledge-amount"] {
   all: unset;
   border: 1px solid hsl(0, 0%, 90%);
