@@ -65,8 +65,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-inline: 10.1rem;
-  padding-block-start: 3rem;
+
+  /* Mobile */
+  padding-inline: 1rem;
+  padding-block-start: 2rem;
+  /* Desktop */
+  /* padding-inline: 10.1rem; */
+  /* padding-block-start: 3rem; */
 }
 #desktop-nav {
   display: none;
@@ -100,10 +105,11 @@ li > a {
   z-index: 1;
   grid-row: 1;
   grid-column: 1 / -1;
-  /* inline-size: 45.5rem; */
-  /* block-size: 90rem; */
+
+  max-inline-size: 40rem;
   border-radius: 10px;
-  margin-inline: 18rem;
+  /* margin-inline: 18rem; */
+  margin-inline: auto;
   margin-block: 15rem 5rem;
   gap: 1.4rem;
 }
