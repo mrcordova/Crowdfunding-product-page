@@ -370,7 +370,8 @@ progress::-webkit-progress-value {
   padding-block: 2rem 2.5rem;
   gap: 1rem;
 }
-#back-project-dialog::backdrop {
+#back-project-dialog::backdrop,
+#thanks-dialog::backdrop {
   background-color: hsl(from hsl(0, 0%, 0%) h s l / 0.5);
 }
 
