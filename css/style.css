@@ -146,7 +146,12 @@ li > a {
   border-radius: 2rem;
 }
 
-:is(.back-project-container > button, .reward-btn, .continue-btn):hover {
+:is(
+    .back-project-container > button,
+    .reward-btn,
+    .continue-btn,
+    .got-it-btn
+  ):hover {
   cursor: pointer;
   background-color: var(--dark-cyan);
 }
