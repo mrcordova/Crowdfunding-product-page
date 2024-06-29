@@ -137,7 +137,7 @@
                   <span class="commissioner-500">left</span>
                 </h4>
 
-                <button class="commissioner-700 reward-btn">
+                <button class="commissioner-700 reward-btn" value="25">
                   Select Reward
                 </button>
               </div>
@@ -157,7 +157,7 @@
                   64
                   <span>left</span>
                 </h4>
-                <button class="commissioner-700 reward-btn">
+                <button class="commissioner-700 reward-btn" value="75">
                   Select Reward
                 </button>
               </div>
@@ -179,7 +179,9 @@
                   0
                   <span>left</span>
                 </h4>
-                <button class="commissioner-700 out-btn">Out of stock</button>
+                <button class="commissioner-700 out-btn" value="200">
+                  Out of stock
+                </button>
               </div>
             </div>
           </div>
@@ -211,7 +213,9 @@
               </div>
             </div>
             <div class="dialog-pledge">
-              <button class="reward-btn commissioner-700">Continue</button>
+              <button class="no-reward-continue-btn commissioner-700" value="0">
+                Continue
+              </button>
             </div>
           </div>
           <div class="dialog-radio-container">
@@ -245,14 +249,15 @@
               <span class="input-symbol">
                 <input
                   required
+                  value="25"
                   type="number"
-                  min="0"
+                  min="25"
                   name="pledge-amount"
                   id="bamboo-amount"
                   placeholder="25" />
               </span>
 
-              <button class="reward-btn commissioner-700">Continue</button>
+              <button class="continue-btn commissioner-700">Continue</button>
               <!-- Selected pledge end -->
             </div>
           </div>
@@ -285,14 +290,17 @@
               <label class="commissioner-500" for="black-amount">
                 Enter your pledge
               </label>
-              <input
-                type="number"
-                min="0"
-                name="pledge-amount"
-                id="black-amount"
-                placeholder="75" />
+              <span class="input-symbol">
+                <input
+                  value="75"
+                  type="number"
+                  min="75"
+                  name="pledge-amount"
+                  id="black-amount"
+                  placeholder="75" />
+              </span>
 
-              <button class="reward-btn commissioner-700">Continue</button>
+              <button class="continue-btn commissioner-700">Continue</button>
               <!-- Selected pledge end -->
             </div>
           </div>
@@ -327,14 +335,16 @@
               <label class="commissioner-500" for="mahogany-amount">
                 Enter your pledge
               </label>
-              <input
-                type="number"
-                min="0"
-                name="pledge-amount"
-                id="mahogany-amount"
-                placeholder="200" />
-
-              <button class="reward-btn commissioner-700">Continue</button>
+              <span class="input-symbol">
+                <input
+                  value="200"
+                  type="number"
+                  min="200"
+                  name="pledge-amount"
+                  id="mahogany-amount"
+                  placeholder="200" />
+              </span>
+              <button class="continue-btn commissioner-700">Continue</button>
               <!-- Selected pledge end -->
             </div>
           </div>

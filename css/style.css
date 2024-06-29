@@ -34,6 +34,9 @@
 button:hover {
   cursor: pointer;
 }
+input[type="radio"]:hover {
+  cursor: pointer;
+}
 body {
   height: 100vh;
   height: 100svh;
@@ -296,13 +299,18 @@ li > a {
   color: var(--dark-gray);
 }
 .reward-btn,
-.got-it-btn {
+.got-it-btn,
+.continue-btn,
+.no-reward-continue-btn {
   background-color: var(--moderate-cyan);
   color: hsl(180, 100%, 98%);
   padding-inline: 2rem;
   padding-block: 0.8rem;
   font-size: 0.9rem;
   border-radius: 1.5rem;
+}
+.no-reward-continue-btn {
+  margin-inline-start: auto;
 }
 .out-btn {
   background-color: hsl(0, 0%, 80%);
