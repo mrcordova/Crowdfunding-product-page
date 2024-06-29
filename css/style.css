@@ -373,17 +373,16 @@ progress::-webkit-progress-value {
 .dialog-choice-para {
   color: var(--dark-gray);
   font-size: 1.08rem;
+  padding-block-start: 1rem;
 }
 .dialog-pledge {
   display: none;
-  width: 100%;
 }
 .dialog-radio-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  /* padding-inline: 1.5rem; */
   padding-block: 1.5rem;
   border: 0.005rem solid hsl(0, 0%, 90%);
   border-radius: 0.5rem;
@@ -401,7 +400,11 @@ input[type="radio"] {
 .dialog-input-container:has(input[type="radio"]:checked) + .dialog-pledge {
   display: flex;
   border-top: 0.15rem solid hsl(0, 0%, 90%);
+  margin-block-start: 1.5rem;
   padding-inline: 1.5rem;
+  padding-block-start: 1.5rem;
+  width: 100%;
+  gap: 1rem;
 }
 /* input[type="radio"]:checked ~ .dialog-pledge {
 } */
@@ -415,6 +418,11 @@ input[type="radio"] {
 label {
   display: flex;
   gap: 0.5rem;
+}
+
+label:has(+ input[name="pledge-amount"]) {
+  color: var(--dark-gray);
+  margin-inline-end: auto;
 }
 .amount-left {
   margin-inline-start: auto;
