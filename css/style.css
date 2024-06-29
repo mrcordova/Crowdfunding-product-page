@@ -31,6 +31,9 @@
   font-style: normal;
   font-variation-settings: "slnt" 0, "FLAR" 0, "VOLM" 0;
 }
+button:hover {
+  cursor: pointer;
+}
 body {
   height: 100vh;
   height: 100svh;
@@ -292,7 +295,8 @@ li > a {
   font-size: 1rem;
   color: var(--dark-gray);
 }
-.reward-btn {
+.reward-btn,
+.got-it-btn {
   background-color: var(--moderate-cyan);
   color: hsl(180, 100%, 98%);
   padding-inline: 2rem;
@@ -473,6 +477,23 @@ input[type="number"] {
 }
 .dialog-amount {
   font-size: 0.9rem;
+}
+#thanks-dialog[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0;
+  border-radius: 0.5rem;
+  margin: auto;
+  text-align: center;
+  gap: 2rem;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+}
+#thanks-dialog > p {
+  width: 50ch;
+  color: var(--dark-gray);
+  /* text-align: center; */
 }
 @media (min-width: 35rem) {
   #hamburger-btn {

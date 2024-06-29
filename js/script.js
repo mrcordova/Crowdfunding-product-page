@@ -6,6 +6,7 @@ const continueBtns = document.querySelectorAll(".dialog-pledge>button");
 const thanksDialog = document.getElementById("thanks-dialog");
 const gotItBtn = thanksDialog.querySelector("button");
 const showModel = function () {
+  backProjDialog.close();
   thanksDialog.showModal();
 };
 backProjBtn.addEventListener("click", () => {
