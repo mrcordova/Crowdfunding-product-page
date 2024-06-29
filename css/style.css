@@ -352,8 +352,10 @@ progress::-webkit-progress-value {
 }
 #back-project-dialog[open] {
   display: flex;
+  border-radius: 0.5rem;
   flex-direction: column;
   padding-inline: 2rem;
+  padding-block: 2rem 2.5rem;
   gap: 1rem;
 }
 #back-project-dialog::backdrop {
@@ -374,26 +376,42 @@ progress::-webkit-progress-value {
 }
 .dialog-pledge {
   display: none;
+  width: 100%;
 }
 .dialog-radio-container {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
-  padding-inline: 1.5rem;
-  padding-block: 1rem;
+
+  /* padding-inline: 1.5rem; */
+  padding-block: 1.5rem;
   border: 0.005rem solid hsl(0, 0%, 90%);
   border-radius: 0.5rem;
+}
+.dialog-input-container {
+  display: flex;
+  gap: 1rem;
+  padding-inline: 1.5rem;
 }
 input[type="radio"] {
   height: 2rem;
   width: 1.5rem;
 }
-input[type="radio"]:checked + div > .dialog-pledge {
+
+.dialog-input-container:has(input[type="radio"]:checked) + .dialog-pledge {
   display: flex;
+  border-top: 0.15rem solid hsl(0, 0%, 90%);
+  padding-inline: 1.5rem;
 }
-input[type="radio"] + div {
+/* input[type="radio"]:checked ~ .dialog-pledge {
+} */
+.dialog-lab-container {
   flex: 1;
 }
+/* input[type="radio"] + div {
+  display: flex;
+  flex: 1;
+} */
 label {
   display: flex;
   gap: 0.5rem;

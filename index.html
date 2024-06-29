@@ -197,121 +197,136 @@
         </p>
         <form id="dialog-form" method="dialog">
           <div class="dialog-radio-container">
-            <input type="radio" name="pledge" id="0" />
-            <div>
-              <label class="commissioner-700" for="0">
-                Pledge with no reward
-              </label>
-              <p class="dialog-choice-para">
-                Choose to support us without a reward if you simply believe in
-                our project. As a backer, you will be signed up to receive
-                product updates via email.
-              <div class="dialog-pledge">
-                <button>Continue</button>
+            <div class="dialog-input-container">
+              <input type="radio" name="pledge" id="0" />
+              <div class="dialog-lab-container">
+                <label class="commissioner-700" for="0">
+                  Pledge with no reward
+                </label>
+                <p class="dialog-choice-para">
+                  Choose to support us without a reward if you simply believe in
+                  our project. As a backer, you will be signed up to receive
+                  product updates via email.
+                </p>
               </div>
+            </div>
+            <div class="dialog-pledge">
+              <button>Continue</button>
             </div>
           </div>
           <div class="dialog-radio-container">
-            <input required type="radio" name="pledge" id="25" />
-            <div>
-              <label for="25">
-                <!-- <span> -->
-                <span class="commissioner-700">Bamboo Stand</span>
-                <span class="label-pledge commissioner-700">Pledge $25 or more</span>
-                <span class="amount-left commissioner-700">
-                  101
-                  <span class="commissioner-500 dialog-amount">left</span>
-                </span>
-                <!-- </span> -->
-              </label>
-              <p class="dialog-choice-para">
-                You get an ergonomic stand made of natural bamboo. You've helped
-                us launch our promotional campaign, and you’ll be added to a special
-                Backer member list.
-              </p>
-              </p>
-
-              <div class="dialog-pledge">
-                <!-- Selected pledge start -->
-                <p>Enter your pledge</p>
-                <input
-                  type="number"
-                  min="0"
-                  name="pledge-amount"
-                  id="bamboo-amount"
-                  placeholder="25" />
-
-                <button>Continue</button>
-                <!-- Selected pledge end -->
+            <div class="dialog-input-container">
+              <input required type="radio" name="pledge" id="25" />
+              <div class="dialog-lab-container">
+                <label for="25">
+                  <!-- <span> -->
+                  <span class="commissioner-700">Bamboo Stand</span>
+                  <span class="label-pledge commissioner-700">
+                    Pledge $25 or more
+                  </span>
+                  <span class="amount-left commissioner-700">
+                    101
+                    <span class="commissioner-500 dialog-amount">left</span>
+                  </span>
+                  <!-- </span> -->
+                </label>
+                <p class="dialog-choice-para">
+                  You get an ergonomic stand made of natural bamboo. You've
+                  helped us launch our promotional campaign, and you’ll be added
+                  to a special Backer member list.
+                </p>
               </div>
+            </div>
+            <div class="dialog-pledge">
+              <!-- Selected pledge start -->
+              <p>Enter your pledge</p>
+              <input
+                type="number"
+                min="0"
+                name="pledge-amount"
+                id="bamboo-amount"
+                placeholder="25" />
+
+              <button>Continue</button>
+              <!-- Selected pledge end -->
             </div>
           </div>
           <div class="dialog-radio-container">
-            <input type="radio" name="pledge" id="75" />
-            <div>
-              <label for="75">
-                <!-- <span> -->
-                <span class="commissioner-700">Black Edition Stand</span>
-                <span class="label-pledge commissioner-700">Pledge $75 or more</span>
-                <span class="amount-left commissioner-700">
-                  64
-                  <span class="commissioner-500 dialog-amount">left</span>
-                </span>
-                <!-- </span> -->
-              </label>
-              <p class="dialog-choice-para">
-                You get a Black Special Edition computer stand and a personal
-                thank you. You’ll be added to our Backer member list. Shipping
-                is included.
-              </p>
-
-              <div class="dialog-pledge">
-                <!-- Selected pledge start -->
-                <p>Enter your pledge</p>
-                <input
-                  type="number"
-                  min="0"
-                  name="pledge-amount"
-                  id="black-amount"
-                  placeholder="75" />
-
-                <button>Continue</button>
-                <!-- Selected pledge end -->
+            <div class="dialog-input-container">
+              <input type="radio" name="pledge" id="75" />
+              <div class="dialog-lab-container">
+                <label for="75">
+                  <!-- <span> -->
+                  <span class="commissioner-700">Black Edition Stand</span>
+                  <span class="label-pledge commissioner-700">
+                    Pledge $75 or more
+                  </span>
+                  <span class="amount-left commissioner-700">
+                    64
+                    <span class="commissioner-500 dialog-amount">left</span>
+                  </span>
+                  <!-- </span> -->
+                </label>
+                <p class="dialog-choice-para">
+                  You get a Black Special Edition computer stand and a personal
+                  thank you. You’ll be added to our Backer member list. Shipping
+                  is included.
+                </p>
               </div>
+            </div>
+
+            <div class="dialog-pledge">
+              <!-- Selected pledge start -->
+              <p>Enter your pledge</p>
+              <input
+                type="number"
+                min="0"
+                name="pledge-amount"
+                id="black-amount"
+                placeholder="75" />
+
+              <button>Continue</button>
+              <!-- Selected pledge end -->
             </div>
           </div>
           <div class="dialog-radio-container">
-            <input disabled type="radio" name="pledge" id="200" />
-            <div>
-              <label for="200">
-                <!-- <span> -->
-                <span class="commissioner-700 out-heading">Mahogany Special Edition</span>
-                <span class="commissioner-700 out-pledge">Pledge $200 or more</span>
-                <span class="amount-left commissioner-700 out-amount">
-                  0
-                  <span class="commissioner-500 dialog-amount">left</span>
-                </span>
-                <!-- </span> -->
-              </label>
-              <p class="dialog-choice-para">
-                You get two Special Edition Mahogany stands, a Backer T-Shirt,
-                and a personal thank you. You’ll be added to our Backer member
-                list. Shipping is included.
-              </p>
-
-              <div class="dialog-pledge">
-                <!-- Selected pledge start -->
-                <p>Enter your pledge</p>
-                <input
-                  type="number"
-                  min="0"
-                  name="pledge-amount"
-                  id="mahogany-amount"
-                  placeholder="200" />
-
-                <button>Continue</button>
-                <!-- Selected pledge end -->
+            <div class="dialog-input-container">
+              <input disabled type="radio" name="pledge" id="200" />
+              <div class="dialog-lab-container">
+                <label for="200">
+                  <!-- <span> -->
+                  <span class="commissioner-700 out-heading">
+                    Mahogany Special Edition
+                  </span>
+                  <span class="commissioner-700 out-pledge">
+                    Pledge $200 or more
+                  </span>
+                  <span class="amount-left commissioner-700 out-amount">
+                    0
+                    <span class="commissioner-500 dialog-amount">left</span>
+                  </span>
+                  <!-- </span> -->
+                </label>
+                <p class="dialog-choice-para">
+                  You get two Special Edition Mahogany stands, a Backer T-Shirt,
+                  and a personal thank you. You’ll be added to our Backer member
+                  list. Shipping is included.
+                </p>
               </div>
+            </div>
+
+            <div class="dialog-pledge">
+              <!-- Selected pledge start -->
+              <p>Enter your pledge</p>
+              <input
+                type="number"
+                min="0"
+                name="pledge-amount"
+                id="mahogany-amount"
+                placeholder="200" />
+
+              <button>Continue</button>
+              <!-- Selected pledge end -->
             </div>
           </div>
         </form>
