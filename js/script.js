@@ -23,7 +23,20 @@ const showModel = function () {
 const addPledges = function (e) {
   const inputVal =
     e.currentTarget.previousElementSibling.querySelector("input").value;
-  // console.log(inputVal);
+  const backersLeft =
+    e.currentTarget.parentElement.previousElementSibling.querySelector(
+      ".amount-left"
+    );
+  let span = document.createElement("span");
+  span.classList.add("commissioner-500", "dialog-amount");
+  span.textContent = " left";
+  let backersLeftNum = backersLeft.textContent
+    .trim()
+    .slice(0, backersLeft.textContent.trim().indexOf(" "));
+
+  backersLeft.textContent = `${--backersLeftNum}`;
+  backersLeft.appendChild(span);
+
   let totalNum = parseInt(totalBackers.textContent.replace(",", ""));
   let totalRaisedNum = parseInt(
     totalRaised.textContent.replace("$", "").replace(",", "")
@@ -33,10 +46,8 @@ const addPledges = function (e) {
     totalNeeded.textContent.trim().slice(3).replace("$", "").replace(",", "")
   );
   const newTolalRaised = totalRaisedNum + Number(inputVal);
-  // console.log(totalNeeded.textContent.trim());
   totalBackers.textContent = `${(++totalNum).toLocaleString()}`;
   totalRaised.textContent = `$${newTolalRaised.toLocaleString()}`;
-  // console.log(newTolalRaised / totalNeedNum);
   progressBar.value = (newTolalRaised / totalNeedNum) * 100;
 };
 
